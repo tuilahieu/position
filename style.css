@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ccc;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu li {
+  background-color: #000;
+  margin-bottom: 6px;
+  padding: 12px 24px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.menu .da-cap {
+  position: relative;
+}
+
+.menu .da-cap:hover .menu-da-cap {
+  opacity: 1;
+}
+
+.menu-da-cap {
+  position: absolute;
+  left: 102%;
+  top: 0;
+  transition: 0.5s all;
+  opacity: 0;
+}
